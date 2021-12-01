@@ -33,7 +33,7 @@ for i in range(5):
 
 #***Note that the range is how many bins you want and the
 #length of the new array for the midpoint is also the length
-#og how many bins you want
+#of how many bins you want
 
 print('BIN EDGES: ', bins1[:-1])
 #:-1 because there is one more bin edge than count
@@ -66,7 +66,7 @@ p1= np.array([1,0,10])
 #[a1,mu,sig]
 #it's not always necessary but if you are getting lines when
 #you don't think there should be or if you're getting a parameter-related
-#error, it's pronan;y because you don't have this or the numbers in it aren't
+#error, it's probably because you don't have this or the numbers in it aren't
 #good enough guesses
 
 popt1, pcov1 = curve_fit(line1, binmid1, counts1, p0=p1)
@@ -115,8 +115,8 @@ counts2,bins2 = np.histogram(data2, bins=3)
 mu2, sigma2 = scipy.stats.norm.fit(data2)
 #It's kinda stupid to try to fit a gaussian to three points
 #I know that orgin will do it but I'm not sure that's a good thing.
-#After speaking to Ebie I don't think that it is a good conclusion to come
-#to that your data is "gaussian" if you only have three unique values
+#After speaking to Ebie, I don't think that it is a good conclusion to come
+#to that your data is "gaussian" if you only have three unique values.
 #If there are only 3 points, it could be anything. In this case,
 #I said the data was bad/ not diverse, but it's open to interpretation
 
